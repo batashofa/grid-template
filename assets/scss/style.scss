@@ -33,7 +33,7 @@ html {
 }
 
 h1 {
-  font-family: "Roboto Slab", serif;
+  // font-family: "Roboto Slab", serif;
   font-size: 3.75rem;
   font-weight: 300;
 }
@@ -53,8 +53,10 @@ a {
   background-color: #2d3651;
   background-image: url(../img/img-header.png);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   position: relative;
+  
 
   .header-overlay {
     background-color: #2d3651;
@@ -78,15 +80,73 @@ a {
       align-items: center;
       // margin: 0 250px 0 300px;
       .header-logo {
+        .header-logo__link {
+          // font-stretch: condensed;
+          font-size: 1.5rem;
+          margin: 15px 298px;
+          letter-spacing: 0.32em;
+          font-stretch: condensed;
+         
+          .header-logo__accent {
+            border: 2px solid #D53D27;
+            padding: 12px 0 14px 3px;
+            
+            
+            
+           
+          }
+        }
+        
       }
       .header-navbar {
         .header-navbar__list {
           display: flex;
+          margin: 40px 288px;
+          
 
           .header-navbar__item {
             list-style-type: none;
+            font-size: 1.10rem;
+            letter-spacing: 0.12rem;
+            margin: 0 20px
+            
           }
         }
+      }
+    }
+  }
+}
+
+
+.header-content {
+  width: 100%;
+  .header-content__container {
+    width: 100%;
+    .header-content__title {
+      z-index: 2;
+      position: relative;
+      color:  #ffffff;
+      margin: 350px 0 0 403px;
+      font-family: "Roboto Slab";
+      letter-spacing: 0.285rem;
+    }
+    .header-content__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .header-content__btn {
+        font-size: 1.25rem;
+        z-index: 0;
+        border: 2px solid #ffffff;
+        font-stretch: condensed;
+        margin: 52px 0;
+        padding: 19px 58;
+        
+        letter-spacing: 0.3rem;
+       
+      
+
+        
       }
     }
   }
