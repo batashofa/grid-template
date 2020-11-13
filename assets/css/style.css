@@ -497,7 +497,7 @@ a {
   background-image: url(../img/img-header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 50%;
   position: relative;
 }
 
@@ -531,23 +531,32 @@ a {
           align-items: center;
 }
 
+.header .header-menu .header-menu__container .header-logo {
+  -ms-flex-item-align: center;
+      align-self: center;
+  letter-spacing: 0.22em;
+  font-size: 1.5rem;
+}
+
 .header .header-menu .header-menu__container .header-logo .header-logo__link {
   font-size: 1.5rem;
-  margin: 15px 298px;
-  letter-spacing: 0.32em;
+  margin: 15px 311px;
+  letter-spacing: 0.26em;
   font-stretch: condensed;
 }
 
 .header .header-menu .header-menu__container .header-logo .header-logo__link .header-logo__accent {
-  border: 2px solid #D53D27;
-  padding: 12px 0 14px 3px;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 14px 0 13px 5px;
+  border: 3px solid #d53d27;
 }
 
 .header .header-menu .header-menu__container .header-navbar .header-navbar__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px 288px;
+  margin: 40px 289px;
 }
 
 .header .header-menu .header-menu__container .header-navbar .header-navbar__list .header-navbar__item {
@@ -563,35 +572,39 @@ a {
 
 .header-content .header-content__container {
   width: 100%;
+  position: relative;
 }
 
 .header-content .header-content__container .header-content__title {
   z-index: 2;
   position: relative;
   color: #ffffff;
-  margin: 350px 0 0 403px;
+  margin: 351px 0 0 420px;
   font-family: "Roboto Slab";
-  letter-spacing: 0.285rem;
+  letter-spacing: 0.34rem;
+  font-size: 3.65rem;
+  font-stretch: condensed;
 }
 
 .header-content .header-content__container .header-content__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .header-content .header-content__container .header-content__buttons .header-content__btn {
+  position: relative;
   font-size: 1.25rem;
-  z-index: 0;
+  z-index: 2;
   border: 2px solid #ffffff;
   font-stretch: condensed;
-  margin: 52px 0;
-  padding: 19px 58;
-  letter-spacing: 0.3rem;
+  margin: 55px 10px;
+  padding: 18px 67px;
+  font-size: 1.125rem;
+  font-family: "Roboto";
+  letter-spacing: 0.1em;
+  font-stretch: condensed;
 }
