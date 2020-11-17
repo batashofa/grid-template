@@ -1,0 +1,31 @@
+.header-menu {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    .header-menu__container {
+      padding-top: 20px;
+      max-width: 1340px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    //   .header-logo {
+    //     letter-spacing: 0.22em;
+    //     font-size: 1.5rem;
+    //     margin-left: 20px;
+    //     font-weight: 400;
+       
+    //     .header-logo__link {
+    //       font-family: "Roboto", sans-serif;
+
+    //       .header-logo__accent {
+    //         display: inline-block;
+    //         margin-right: 4px;
+    //         padding: 14px 1px 13px 5px;
+    //         border: 3px solid #d53d27;
+    //       }
+    //     }
+    //   }
+    }
+  }

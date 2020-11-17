@@ -1,0 +1,21 @@
+.header-navbar {
+    .header-navbar__list {
+      display: flex;
+      position: right;
+      letter-spacing: 0.1em;
+
+      .header-navbar__item {
+        list-style-type: none;
+        font-size: 1.125rem;
+        margin: 0 20px;
+        .header-navbar__link {
+          font-family: "Roboto", sans-serif;
+          font-stretch: ultra-expanded;
+          transition: color 0.5s;
+          &:hover {
+            color: #d66926;
+          }
+        }
+      }
+    }
+  }

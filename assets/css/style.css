@@ -469,26 +469,24 @@ template {
 }
 
 html {
+  letter-spacing: 0.1em;
   font-size: 16px;
-  letter-spacing: 0.2em;
   font-family: "Robota", sans-serif;
   color: #637588;
   overflow-y: scroll;
 }
 
 h1 {
+  font-family: "Robota", sans-serif;
   font-size: 3.75rem;
   font-weight: 300;
+  line-height: 1.2em;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   color: #ffffff;
-}
-
-.header-menu__container,
-.header-content__container {
-  clear: both;
 }
 
 .header {
@@ -501,7 +499,7 @@ a {
   position: relative;
 }
 
-.header .header-overlay {
+.header-overlay {
   background-color: #2d3651;
   opacity: 0.8;
   top: 0;
@@ -512,14 +510,16 @@ a {
   z-index: 1;
 }
 
-.header .header-menu {
+.header-menu {
   position: relative;
   z-index: 2;
   width: 100%;
 }
 
-.header .header-menu .header-menu__container {
-  width: 100%;
+.header-menu .header-menu__container {
+  padding-top: 20px;
+  max-width: 1340px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,62 +531,88 @@ a {
           align-items: center;
 }
 
-.header .header-menu .header-menu__container .header-logo {
-  -ms-flex-item-align: center;
-      align-self: center;
+.header-logo {
   letter-spacing: 0.22em;
   font-size: 1.5rem;
+  margin-left: 20px;
+  font-weight: 400;
 }
 
-.header .header-menu .header-menu__container .header-logo .header-logo__link {
-  font-size: 1.5rem;
-  margin: 15px 311px;
-  letter-spacing: 0.26em;
-  font-stretch: condensed;
+.header-logo .header-logo__link {
+  font-family: "Roboto", sans-serif;
 }
 
-.header .header-menu .header-menu__container .header-logo .header-logo__link .header-logo__accent {
+.header-logo .header-logo__link .header-logo__accent {
   display: inline-block;
-  margin-right: 5px;
-  padding: 14px 0 13px 5px;
+  margin-right: 4px;
+  padding: 14px 1px 13px 5px;
   border: 3px solid #d53d27;
 }
 
-.header .header-menu .header-menu__container .header-navbar .header-navbar__list {
+.header-navbar .header-navbar__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px 289px;
+  position: right;
+  letter-spacing: 0.1em;
 }
 
-.header .header-menu .header-menu__container .header-navbar .header-navbar__list .header-navbar__item {
+.header-navbar .header-navbar__list .header-navbar__item {
   list-style-type: none;
-  font-size: 1.10rem;
-  letter-spacing: 0.12rem;
+  font-size: 1.125rem;
   margin: 0 20px;
 }
 
+.header-navbar .header-navbar__list .header-navbar__item .header-navbar__link {
+  font-family: "Roboto", sans-serif;
+  font-stretch: ultra-expanded;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.header-navbar .header-navbar__list .header-navbar__item .header-navbar__link:hover {
+  color: #d66926;
+}
+
 .header-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
   width: 100%;
 }
 
 .header-content .header-content__container {
-  width: 100%;
+  max-width: 1340px;
+  margin: auto;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-content .header-content__container .header-content__title {
   z-index: 2;
   position: relative;
   color: #ffffff;
-  margin: 351px 0 0 420px;
+  margin: auto auto 53px auto;
   font-family: "Roboto Slab";
-  letter-spacing: 0.34rem;
-  font-size: 3.65rem;
-  font-stretch: condensed;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  line-height: 1.2em;
 }
 
-.header-content .header-content__container .header-content__buttons {
+.header-content .header-content__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,16 +621,272 @@ a {
           justify-content: center;
 }
 
-.header-content .header-content__container .header-content__buttons .header-content__btn {
+.header-content .header-content__buttons .header-content__btn {
   position: relative;
-  font-size: 1.25rem;
+  height: 60px;
   z-index: 2;
   border: 2px solid #ffffff;
   font-stretch: condensed;
-  margin: 55px 10px;
-  padding: 18px 67px;
+  margin: 0 10px -1px;
+  padding: 18px 0;
+  min-width: 250px;
   font-size: 1.125rem;
   font-family: "Roboto";
   letter-spacing: 0.1em;
-  font-stretch: condensed;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.header-content .header-content__buttons .header-content__btn:hover {
+  background-color: #d66926;
+}
+
+.skills {
+  padding: 10px;
+}
+
+.skills .skills__container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+  grid-auto-rows: calc(33.333vh - 13.333px);
+  margin-bottom: 10px;
+}
+
+.skills .skills__container .skill-item {
+  background-color: #2d3651;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills .skills__container .skill-item .skill-item__overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #2d3651;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.skills .skills__container .skill-item .skill-item__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.skills .skills__container .skill-item .skill-item__title {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.skills .skills__container .skill-item .skill-item__link {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.1em;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+
+.skills .skills__container .skill-item:hover .skill-item__image {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.skills .skills__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.skills .skills__button .btn-accent {
+  min-width: 350px;
+  height: 60px;
+  border: 2px solid #2D3651;
+  font-size: 1.125rem;
+  font-family: "Roboto";
+  letter-spacing: 0.1em;
+  text-align: center;
+  background-color: rgba(45, 54, 81, 0.8);
+  padding: 16px 20px;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.skills .skills__button .btn-accent:hover {
+  background-color: #d66926;
+}
+
+.skills .skill-item:nth-of-type(1) {
+  grid-area: a1;
+}
+
+.skills .skill-item:nth-of-type(1) .skill-item__image {
+  background-image: url(../img/img-html.png);
+}
+
+.skills .skill-item:nth-of-type(2) {
+  grid-area: a2;
+}
+
+.skills .skill-item:nth-of-type(2) .skill-item__image {
+  background-image: url(../img/img-css.png);
+}
+
+.skills .skill-item:nth-of-type(3) {
+  grid-area: a3;
+}
+
+.skills .skill-item:nth-of-type(3) .skill-item__image {
+  background-image: url(../img/img-markup.png);
+}
+
+.skills .skill-item:nth-of-type(4) {
+  grid-area: a4;
+}
+
+.skills .skill-item:nth-of-type(4) .skill-item__image {
+  background-image: url(../img/img-webdesign.png);
+}
+
+.skills .skill-item:nth-of-type(5) {
+  grid-area: a5;
+}
+
+.skills .skill-item:nth-of-type(5) .skill-item__image {
+  background-image: url(../img/img-qa.png);
+}
+
+.skills .skill-item:nth-of-type(6) {
+  grid-area: a6;
+}
+
+.skills .skill-item:nth-of-type(6) .skill-item__image {
+  background-image: url(../img/img-codding.png);
+}
+
+.skills .skill-item:nth-of-type(7) {
+  grid-area: a7;
+}
+
+.skills .skill-item:nth-of-type(7) .skill-item__image {
+  background-image: url(../img/img-adaptability.png);
+}
+
+.skills .skill-item:nth-of-type(8) {
+  grid-area: a8;
+}
+
+.skills .skill-item:nth-of-type(8) .skill-item__image {
+  background-image: url(../img/img-php.png);
+}
+
+.skills .skill-item:nth-of-type(9) {
+  grid-area: a9;
+}
+
+.skills .skill-item:nth-of-type(9) .skill-item__image {
+  background-image: url(../img/img-seo.png);
+}
+
+.skills .skill-item:hover .skill-item__overlay {
+  opacity: 0.95 !important;
+}
+
+.skills .skill-item:hover .skill-item__link {
+  color: #d66926;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .header-content .header-content__container .header-content__title {
+    margin: 1px auto 43px auto;
+  }
+  .header-content .header-content__buttons .header-content__btn {
+    margin: 0 10px;
+    min-width: 200px;
+    height: 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+  }
+  .skills .skills__container {
+    grid-template-areas: "a1 a1 a2 " "a3 a4 a4 " "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+  }
+}
+
+@media (max-width: 992px) and (max-width: 768px) {
+  .skills .skills__container {
+    grid-gap: 10px;
+    grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+  .header-content .header-content__container .header-content__title {
+    margin: 1px 0 33px 0;
+  }
+  .header-content .header-content__buttons .header-content__btn {
+    margin: 0 10px;
+    min-width: 170px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
+  }
 }
