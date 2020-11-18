@@ -4,17 +4,14 @@
     transform: translateY(-50%);
     z-index: 2;
     width: 100%;
-    .header-content__container {
-      max-width: 1340px;
-      margin: auto;
-      position: relative;
-      display: flex;
+    &__container {
+      @extend %container;
       flex-flow: column;
       align-items: center;
       .header-content__title {
         z-index: 2;
         position: relative;
-        color: #ffffff;
+        color: $color-light;
         margin: auto auto 53px auto;
         font-family: "Roboto Slab";
         letter-spacing: 0.08em;
@@ -42,7 +39,7 @@
         position: relative;
         height: 60px;
         z-index: 2;
-        border: 2px solid #ffffff;
+        border: 2px solid $color-light;
         font-stretch: condensed;
         margin: 0 10px -1px ;
         padding: 18px 0;
@@ -53,9 +50,10 @@
         text-align: center;
         background-color: rgba(255, 255, 255, 0.1);
         transition: background-color 0.5s;
-  
+
+        &:focus,
         &:hover {
-          background-color: #d66926;
+          background-color: $color-accent;
         }
   
         @media (max-width: 992px) {

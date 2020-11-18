@@ -1,5 +1,5 @@
 .header-navbar {
-    .header-navbar__list {
+    &__list {
       display: flex;
       position: right;
       letter-spacing: 0.1em;
@@ -13,7 +13,7 @@
           font-stretch: ultra-expanded;
           transition: color 0.5s;
           &:hover {
-            color: #d66926;
+            color: $color-accent;
           }
         }
       }

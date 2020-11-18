@@ -1,0 +1,23 @@
+.skills__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  .btn-accent {
+    min-width: 350px;
+    height: 60px;
+    border: 2px solid $color-primary;
+    font-size: 1.125rem;
+    font-family: "Roboto";
+    letter-spacing: 0.1em;
+    text-align: center;
+    background-color: rgba(45, 54, 81, 0.8);
+    padding: 17px 19px;
+    transition: background-color 0.5s;
+    
+    &:focus,
+    &:hover {
+      background-color: $color-accent;
+    }
+  }
+}

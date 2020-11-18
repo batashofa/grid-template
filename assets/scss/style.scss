@@ -13,7 +13,7 @@
 @import "header/header-navbar";
 @import "header/header-content";
 
-@import "sections/section-skills";
+@import "sections/skills/section-skills";
 @import "sections/section-about";
 @import "sections/section-form";
 @import "sections/section-posts";
@@ -58,7 +58,7 @@
 
 // .header {
 //   min-height: 100vh;
-//   background-color: #2d3651;
+//   background-color: $color-primary;
 //   background-image: url(../img/img-header.png);
 //   background-repeat: no-repeat;
 //   background-size: cover;
@@ -66,7 +66,7 @@
 //   position: relative;
 
   // .header-overlay {
-  //   background-color: #2d3651;
+  //   background-color: $color-primary;
   //   opacity: 0.8;
   //   top: 0;
   //   left: 0;
@@ -122,7 +122,7 @@
 //           font-stretch: ultra-expanded;
 //           transition: color 0.5s;
 //           &:hover {
-//             color: #d66926;
+//             color:$color-accent;
 //           }
 //         }
 //       }
@@ -254,7 +254,7 @@
 //     }
 
 //     .skill-item {
-//       background-color: #2d3651;
+//       background-color: $color-primary;
 //       position: relative;
 //       overflow: hidden;
 
@@ -265,7 +265,7 @@
 //         bottom: 0;
 //         right: 0;
 //         left: 0;
-//         background-color: #2d3651;
+//         background-color: $color-primary;
 //         opacity: 0.8;
 //         transition: opacity 0.5s;
 //       }
@@ -323,7 +323,7 @@
 //     .btn-accent {
 //       min-width: 350px;
 //       height: 60px;
-//       border: 2px solid#2D3651;
+//       border: 2px solid$color-primary;
 //       font-size: 1.125rem;
 //       font-family: "Roboto";
 //       letter-spacing: 0.1em;
@@ -401,7 +401,7 @@
 //   }
 
 //   .skill-item:hover .skill-item__link {
-//     color: #d66926;
+//     color:$color-accent;
 //   }
 // }
 // @media (max-height: 640px) {
