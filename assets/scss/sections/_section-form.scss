@@ -1,0 +1,68 @@
+.form {
+  padding: 30px 0;
+  background-color: $color-primary;
+  &__container {
+    @extend %container;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .form-item {
+      display: flex;
+       
+      .form-item-input {
+        display: block;
+        color:$color-light;
+        width: 420px;
+        height: 60px;
+        padding: 2px 30px 0 30px;
+        transition: background-color 0.5s, border-color 0.5s;
+        letter-spacing: 0.15em;
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-bottom-color: rgba(255, 255, 255, 0.25);
+        background-color: rgba(255, 255, 255, 0.05);
+        font-size: 1.125rem;
+        margin-right: 20px;
+
+        @media (max-width: 992px) {
+          width: 303.5px;
+          margin: 0 20px 1px 0;
+          padding: 0 30px 1px 30px;
+        }
+
+        &:hover,
+        &:focus {
+          border-color: rgba($color-light, 0.15);
+          border-bottom-color: $color-light;
+          background-color: rgba($color-light, 0.15);
+          outline: none;
+
+          
+      
+        }
+      }
+      .btn-accent {
+        width: 420px;
+        height: 60px;
+        color:$color-light;
+        border-color: rgba($color-light, 0);
+        border-bottom-color: rgba($color-light, 0.4);
+        background-color: rgba($color-light, 0.1);
+        letter-spacing: 0.1em;
+        font-size: 1.125rem;
+        font-family: "Robota", sans-serif;
+        transition: background-color 0.5s, border-color 0.5s;
+
+        @media (max-width: 992px) {
+          width: 303.5px;
+          padding: 0 0 0 2px;
+        }
+
+        &:hover {
+            background-color:$color-accent;
+            border-color: $color-light;
+            cursor: pointer;
+        }
+      }
+    }
+  }
+}
