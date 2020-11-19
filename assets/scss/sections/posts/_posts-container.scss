@@ -1,0 +1,68 @@
+    .posts__container {
+      @extend %container;
+      flex-flow: column;
+      padding-right: 20px;
+      padding-left: 20px;
+      h2 {
+        max-height: 48px;
+        width: 100%;
+        margin: 0;
+        letter-spacing: 0.1em;
+        color: #2d3651;
+        font-family: "Roboto Slab", serif;
+        line-height: 1.2em;
+        font-size: 2.5rem;
+        margin-bottom: 56px;
+      }
+  
+      .posts__grid {
+        position: relative;
+        display: grid;
+        padding-bottom: 20px;
+        grid-gap: 20px;
+        grid-template-areas:
+          "p1 p1 p2 p3"
+          "p4 p5 p6 p6";
+        grid-template-columns: repeat(4, 310px);
+      }
+  
+      .post-item {
+        display: block;
+        &__link {
+          display: grid;
+          overflow: hidden;
+          height: 100%;
+          grid-template-rows: 300px 1fr;
+          text-decoration: none;
+          background-color: #eeeeee;
+        }
+  
+        &__caption {
+          display: grid;
+          align-self: center;
+          transition: color 0.5s;
+          text-align: center;
+          font-family: "Roboto Slab", serif;
+          padding: 20px;
+        
+  
+          h3 {
+            letter-spacing: 0.05em;
+            color: #637588;
+            font-size: 1.125rem;
+            margin: 18px 0;
+          }
+          p {
+            font-family: "Roboto", serif;
+            transition: color 0.5s;
+            letter-spacing: 0.01rem;
+            text-align: center;
+            color: #637588;
+            font-size: 1rem;
+            line-height: 1.15;
+          }
+        }
+      }
+    }
+  
+  
