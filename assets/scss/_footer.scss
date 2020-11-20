@@ -19,7 +19,7 @@
 
     & .fab {
       font-size: 36px;
-      padding: 10px 6px;
+      padding: 10px 5.5px 10px 7px;
       transition: color 0.5s;
       &:hover {
         color: $color-accent;
@@ -49,7 +49,7 @@
       height: 2px;
       content: "";
       background-color: rgba($color-light, 0.1);
-      margin-bottom: 75px;
+      margin-bottom: 76px;
     }
 
     span {
@@ -60,7 +60,7 @@
       align-content: center;
       letter-spacing: 0.33em;
       font-weight: 100;
-      color: $color-gray;
+      color: rgba($color-gray, 0.7);
     }
   }
 }
