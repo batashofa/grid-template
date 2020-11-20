@@ -2,6 +2,11 @@
     position: relative;
     z-index: 2;
     width: 100%;
+
+    @media (max-width: 769px) {
+      background-color: rgba($color-gray-dark, 0.25);
+    }
+  
     &__container {
       padding-top: 20px;
       @extend %container;

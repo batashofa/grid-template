@@ -27,6 +27,14 @@
           & {
             margin: 1px 0 33px 0;
           }
+          
+        }
+        @media (max-width: 576px) {
+          & {
+            margin: 1px 0 33px 0;
+            width: 400px;
+          }
+          
         }
       }
     }

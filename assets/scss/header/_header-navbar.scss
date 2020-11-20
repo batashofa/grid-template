@@ -83,7 +83,7 @@
     }
     
     &.open span:nth-child(6) {
-      left: calc(50% - 5px);
+      left: calc(50% - 2.5px);
       top: 14.5px;
     }
   }
@@ -92,19 +92,39 @@
     display: flex;
     position: right;
     letter-spacing: 0.1em;
+    padding: 0;
+    
+    
 
     @media (max-width: 769px) {
       display: none;
+      position: absolute;
+      top: calc(100% - 16px);
+      right: 20px;
+      text-align: end;
+      background-color: rgba($color-gray-dark, 0.9);
+    }
+
+    &.open {
+      display: block;
     }
 
     .header-navbar__item {
       list-style-type: none;
       font-size: 1.125rem;
       margin: 0 20px;
+      @media (max-width: 769px) {
+        padding: 20px;
+        margin-right:  10px;
+        margin: 0;
+      }
+      
       .header-navbar__link {
         font-family: "Roboto", sans-serif;
         font-stretch: ultra-expanded;
         transition: color 0.5s;
+       
+        
         &:hover {
           color: $color-accent;
         }
