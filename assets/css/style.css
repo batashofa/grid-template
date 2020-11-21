@@ -1017,15 +1017,17 @@ a {
 .form__container {
   padding-right: 20px;
   padding-left: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .form__container .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100%/3);
+  width: 420px;
+}
+
+.form__container .form-item:nth-child(2) {
+  margin: 0 20px;
 }
 
 .form__container .form-item .form-item-input {
@@ -1041,7 +1043,6 @@ a {
   border-bottom-color: rgba(255, 255, 255, 0.25);
   background-color: rgba(255, 255, 255, 0.05);
   font-size: 1.125rem;
-  margin-right: 20px;
 }
 
 .form__container .form-item .form-item-input:hover, .form__container .form-item .form-item-input:focus {
@@ -1321,10 +1322,10 @@ a {
   h1 {
     font-size: 2.5rem;
   }
-  .header-content__container .header-content__title {
+  .header-content .header-content__container .header-content__title {
     margin: 1px auto 43px auto;
   }
-  .header-content .header-content__buttons .header-content__btn {
+  .header-content .header-content__container .header-content__title .header-content__buttons .header-content__btn {
     margin: 0 10px;
     min-width: 200px;
     height: 50px;
@@ -1333,11 +1334,14 @@ a {
     letter-spacing: 0.1em;
     font-size: 1rem;
   }
+  .skills .skills__container .skill-item__link {
+    font-size: 1.25rem;
+  }
   .skills .skills__container {
     grid-template-areas: "a1 a1 a2 " "a3 a4 a4 " "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
   }
-  .skills .skills__container .skill-item__link {
-    font-size: 1.25rem;
+  .about .about__container .about__content p:first-of-type::after {
+    right: -20px;
   }
   .about {
     padding: 80px 0 64px 0;
@@ -1357,22 +1361,11 @@ a {
     line-height: 1.15em;
     margin: 15px 0 16px 0;
   }
-  .about .about__container .about__content p:first-of-type::after {
-    right: -20px;
-  }
   .about .about__image img {
     margin-left: 42px;
   }
-  .form {
-    padding: 30px 0 30px;
-  }
   .form__container .form-item .form-item-input {
-    margin: 0 20px 0 0;
     padding: 0 30px 1px 30px;
-  }
-  .form__container .form-item .btn-accent {
-    width: 303.5px;
-    padding: 0 0 0 2px;
   }
   .posts .posts__container h2 {
     font-size: 2rem;
@@ -1384,14 +1377,6 @@ a {
   }
   .posts {
     padding: 80px 0;
-  }
-}
-
-@media (max-width: 992px) and (max-width: 768px) {
-  .skills .skills__container {
-    grid-gap: 10px;
-    grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1421,10 +1406,10 @@ a {
   .header-logo {
     margin: 0 0 20px 20px;
   }
-  .header-content__container .header-content__title {
+  .header-content .header-content__container .header-content__title {
     margin: 1px 0 33px 0;
   }
-  .header-content .header-content__buttons .header-content__btn {
+  .header-content .header-content__container .header-content__title .header-content__buttons .header-content__btn {
     margin: 0 10px;
     min-width: 170px;
     height: 40px;
@@ -1436,8 +1421,16 @@ a {
   .skills .skills__container .skill-item__link {
     font-size: 1.125rem;
   }
+  .skills .skills__container {
+    grid-gap: 10px;
+    grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+    grid-template-columns: 1fr 1fr;
+  }
+  .about .about__container .about__content p:first-of-type::after {
+    right: -11px;
+  }
   .about {
-    padding: 60px 0 45px 0;
+    padding: 60px 0 44px 0;
   }
   .about .about__container .about__content {
     width: 470px;
@@ -1449,13 +1442,10 @@ a {
     margin-bottom: 31px;
     font-size: 1.5rem;
   }
-  .about .about__container .about__content p {
+  .about .about__container .about__content h2 p {
     margin: 10px 0 16px 0;
   }
-  .about .about__container .about__content p:first-of-type::after {
-    right: -11px;
-  }
-  .about .about__image img {
+  .about .about__container .about__image img {
     width: 236px;
     height: 425px;
     margin-left: 21px;
@@ -1463,6 +1453,13 @@ a {
   }
   .form {
     padding: 30px 0 10px;
+  }
+  .form__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form__container .form-item:nth-child(2) {
+    margin: 0 20px 0 0;
   }
   .form__container .form-item {
     width: calc((100% - 20px) / 2);
@@ -1473,10 +1470,6 @@ a {
   .form__container .form-item .form-item-input {
     margin: 0 0 20px 0;
     padding: 0 30px 1px 30px;
-  }
-  .form__container .form-item .btn-accent {
-    width: 100%;
-    margin: 0 0 0 20px;
   }
   .posts .posts__container h2 {
     font-size: 1.5rem;
@@ -1492,8 +1485,84 @@ a {
 }
 
 @media (max-width: 576px) {
-  .header-content__container .header-content__title {
+  .header-content .header-content__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-content .header-content__container .header-content__title {
     margin: 1px 0 33px 0;
     width: 400px;
+  }
+  .header-content .header-content__container .header-content__buttons .header-content__btn {
+    margin: 0 10px;
+    min-width: 170px;
+    height: 40px;
+    padding: 10px 20px;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
+  }
+  .header-content .header-content__container .header-content__buttons .header-content__btn:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  .skills .skills__container {
+    grid-gap: 20px;
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+    grid-template-columns: 1fr;
+  }
+  .skills .skills__button .btn-accent {
+    padding: 18px 20px;
+    width: 100%;
+  }
+  .skills {
+    padding: 20px;
+  }
+  .about {
+    padding-bottom: 60px;
+  }
+  .about .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .about .about__container .about__content {
+    width: 100%;
+  }
+  .about .about__container .about__content h2 {
+    text-align: center;
+  }
+  .about .about__container .about__content h2 .about__content--accent {
+    padding: 0 0 0 160px;
+  }
+  .about .about__container .about__image img {
+    margin: 4px 0 0 0;
+    width: 266.55px;
+    height: 480px;
+  }
+  .form {
+    padding-bottom: 30px;
+  }
+  .form .form__container .form-item {
+    width: 100%;
+  }
+  .form .form__container .form-item .form-item-input {
+    width: 535px;
+  }
+  .posts .posts__container h2 {
+    text-align: center;
+  }
+  .posts .posts__container .posts__grid {
+    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+    grid-template-columns: 1fr;
+    margin-top: 1px;
+  }
+  .posts .posts__button {
+    padding: 0 20px;
+  }
+  .posts .posts__button .btn-accent {
+    padding: 18px 20px;
+    width: 100%;
   }
 }
