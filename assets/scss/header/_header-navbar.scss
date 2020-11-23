@@ -9,7 +9,7 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
 
-    @media (min-width: 768.8px) {
+    @media (min-width: 767px) {
       display: none;
     }
     &-row {
@@ -96,13 +96,15 @@
     
     
 
-    @media (max-width: 769px) {
+    @media (max-width: 767px) {
       display: none;
       position: absolute;
       top: calc(100% - 16px);
       right: 20px;
       text-align: end;
       background-color: rgba($color-gray-dark, 0.9);
+     
+   
     }
 
     &.open {
@@ -113,7 +115,7 @@
       list-style-type: none;
       font-size: 1.125rem;
       margin: 0 20px;
-      @media (max-width: 769px) {
+      @media (max-width: 767px) {
         padding: 20px;
         margin-right:  10px;
         margin: 0;
