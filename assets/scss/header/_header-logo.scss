@@ -1,18 +1,11 @@
 .header-logo {
     letter-spacing: 0.22em;
     font-size: 1.5rem;
-    margin-left: 20px;
+    margin-left: $gap;
     font-weight: 400;
-
-    @media (max-width: 768px) {
-      & {
-        margin: 0 0 20px 20px;
-      }
-    }
    
     &__link {
-      font-family: "Roboto", sans-serif;
-
+      font-family: $font-main;
       .header-logo__accent {
         display: inline-block;
         margin-right: 4px;
@@ -21,3 +14,12 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .header-logo {
+      margin: 0 0 $gap $gap;
+      .header-logo__link {
+        
+      }
+    }
+  }
+ 

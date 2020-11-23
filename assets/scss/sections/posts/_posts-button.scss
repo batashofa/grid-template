@@ -23,9 +23,9 @@
 
 @media (max-width: 576px) {
   .posts__button {
-    padding:  0 20px;
+    padding:  0 $gap;
     .btn-accent {
-      padding: 18px 20px;
+      padding: 18px $gap;
       width: 100%;
     }
   }

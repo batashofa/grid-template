@@ -13,7 +13,7 @@
   .about__container {
     @extend %container;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 $gap;
     .about__content {
       display: block;
       width: 924px;
@@ -34,7 +34,7 @@
         font-size: 2.5rem;
         letter-spacing: 0.1em;
         color: $color-primary;
-        font-family: "Roboto Slab", serif;
+        font-family: $font-header;
         line-height: 1.2em;
         margin: 0 0 51px 0;
         // @media (max-width: 992px) {
@@ -47,7 +47,7 @@
         // }
 
         .about__content--accent {
-          font-family: "Roboto Slab", serif;
+          font-family: $font-header;
           display: flex;
           clear: both;
         }
@@ -75,7 +75,7 @@
           right: -55px;
 
           @media (max-width: 992px) {
-            right: -20px;
+            right: -$gap;
           }
           @media (max-width: 768px) {
             right: -11px;
