@@ -12,6 +12,7 @@
     background-color: $color-primary;
     position: relative;
     overflow: hidden;
+    
 
     &:hover .skill-item__overlay {
       opacity: 0.95 !important;
@@ -35,13 +36,14 @@
       background-size: cover;
       background-repeat: no-repeat;
       transition: transform 0.5s;
+      overflow: hidden;
     }
     &__title {
       @include abs-position;
       z-index: 2;
       margin: 0;
       font-size: 1.25rem;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.1em;
       font-weight: 600;
     }
 
@@ -51,9 +53,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      letter-spacing: 0.1em;
       transition: color 0.5s;
       font-family: $font-main;
+      font-weight: bold;
     }
 
     &:hover .skill-item__image {
@@ -61,7 +63,6 @@
     }
   }
 }
-
 
 .skill-item:nth-of-type(1) {
   grid-area: a1;
@@ -182,6 +183,25 @@
       "a8"
       "a9";
     grid-template-columns: 1fr;
+    .skill-item {
+      .skill-item__overlay {
+      }
+      .skill-item__image {
+      }
+      .skill-item__title {
+        .skill-item__link {
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-height: 640px) {
+  .skills__container {
+    grid-auto-rows: 200px;
     .skill-item {
       .skill-item__overlay {
       }
