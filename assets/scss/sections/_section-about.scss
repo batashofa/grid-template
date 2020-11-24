@@ -47,7 +47,6 @@
           @media (max-width: 767px) {
             right: -10px;
           }
-      
         }
       }
     }
@@ -143,21 +142,18 @@
       flex-flow: column;
       .about__content {
         width: 100%;
-
         h2 {
           text-align: center;
           .about__content--accent {
             padding: 0 0 0 160px;
           }
         }
-        
         p {
           width: 535px;
         }
       }
     }
     .about__image {
-      
       width: 266.55px;
       img {
         height: 480px;

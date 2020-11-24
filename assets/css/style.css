@@ -1323,10 +1323,10 @@ a {
   h1 {
     font-size: 2.5rem;
   }
-  .header-content .header-content__container .header-content__title {
+  .header-content__container__title {
     margin: 1px auto 43px auto;
   }
-  .header-content .header-content__buttons .header-content__btn {
+  .header-content__buttons__btn {
     margin: 0 10px;
     min-width: 200px;
     height: 50px;
@@ -1405,11 +1405,11 @@ a {
     margin-right: 10px;
     margin: 0;
   }
-  .header-content .header-content__container .header-content__title {
+  .header-content__container__title {
     width: 536px;
     margin: 1px 0 33px 0;
   }
-  .header-content .header-content__buttons .header-content__btn {
+  .header-content__buttons__btn {
     margin: 0 10px;
     min-width: 170px;
     height: 40px;
@@ -1425,6 +1425,9 @@ a {
   }
   .skills .skills__container .skill-item .skill-item__title .skill-item__link {
     font-size: 1.125rem;
+  }
+  .skills .skills__button .btn-accent {
+    padding: 18px 20px;
   }
   .about .about__container .about__content p:first-of-type::after {
     right: -10px;
@@ -1478,23 +1481,29 @@ a {
     grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
     grid-template-columns: 1fr 1fr;
   }
+  .posts .posts__button {
+    padding: 0 20px;
+  }
+  .posts .posts__button .btn-accent {
+    padding: 18px 20px;
+  }
   .posts {
     padding: 60px 0;
   }
 }
 
 @media (max-width: 575px) {
-  .header-content .header-content__container .header-content__title {
+  .header-content__container__title {
     margin: 1px 0 33px 0;
     width: 400px;
   }
-  .header-content .header-content__container .header-content__buttons {
+  .header-content__container__buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header-content .header-content__container .header-content__buttons .header-content__btn {
+  .header-content__container__buttons__btn {
     margin: 0 10px;
     min-width: 170px;
     height: 40px;
@@ -1502,7 +1511,7 @@ a {
     letter-spacing: 0.05em;
     font-size: 1rem;
   }
-  .header-content .header-content__container .header-content__buttons .header-content__btn:not(:last-of-type) {
+  .header-content__container__buttons__btn:not(:last-of-type) {
     margin-bottom: 20px;
   }
   .skills .skills__container {

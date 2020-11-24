@@ -21,6 +21,15 @@
   }
 }
 
+@media (max-width: 767px) {
+  .posts__button {
+    padding:  0 $gap;
+    .btn-accent {
+      padding: 18px $gap;
+    }
+  }
+}
+
 @media (max-width: 575px) {
   .posts__button {
     padding:  0 $gap;

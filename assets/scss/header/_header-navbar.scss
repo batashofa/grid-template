@@ -1,5 +1,4 @@
 .header-navbar {
-  
   &__btn {
     width: 30px;
     height: 22.5px;
@@ -29,59 +28,57 @@
         left: 0px;
         border-radius: 3px 0 0 3px;
       }
-      
+
       &:nth-child(1),
       &:nth-child(2) {
         top: 0px;
       }
-      
+
       &:nth-child(3),
       &:nth-child(4) {
         top: 9px;
       }
-      
+
       &:nth-child(5),
       &:nth-child(6) {
         top: 18px;
       }
-     
-
     }
     &.open span:nth-child(1),
     &.open span:nth-child(6) {
       transform: rotate(45deg);
     }
-    
+
     &.open span:nth-child(2),
     &.open span:nth-child(5) {
       transform: rotate(-45deg);
     }
-    
+
     &.open span:nth-child(1) {
       left: 2.5px;
       top: 3.5px;
     }
-    
+
     &.open span:nth-child(2) {
       left: calc(50% - 2.5px);
       top: 3.5px;
     }
-    
+
     &.open span:nth-child(3) {
       left: -50%;
       opacity: 0;
     }
-    
+
     &.open span:nth-child(4) {
       left: 100%;
       opacity: 0;
     }
-    
+
     &.open span:nth-child(5) {
       left: 2.5px;
       top: 14.5px;
     }
-    
+
     &.open span:nth-child(6) {
       left: calc(50% - 2.5px);
       top: 14.5px;
@@ -93,8 +90,6 @@
     position: right;
     letter-spacing: 0.1em;
     padding: 0;
-    
-    
 
     @media (max-width: 767px) {
       display: none;
@@ -103,8 +98,6 @@
       right: 20px;
       text-align: end;
       background-color: rgba($color-gray-dark, 0.9);
-     
-   
     }
 
     &.open {
@@ -117,16 +110,15 @@
       margin: 0 20px;
       @media (max-width: 767px) {
         padding: 20px;
-        margin-right:  10px;
+        margin-right: 10px;
         margin: 0;
       }
-      
+
       .header-navbar__link {
         font-family: "Roboto", sans-serif;
         font-stretch: ultra-expanded;
         transition: color 0.5s;
-       
-        
+
         &:hover {
           color: $color-accent;
         }
@@ -134,8 +126,3 @@
     }
   }
 }
-
-
-
-
-

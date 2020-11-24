@@ -50,14 +50,14 @@
 
 @media (max-width: 991px) {
   .header-content {
-    .header-content__container {
+    &__container {
       
-      .header-content__title {
+      &__title {
         margin: 1px auto 43px auto;
       }
     }
-    .header-content__buttons {
-      .header-content__btn {
+    &__buttons {
+      &__btn {
         margin: 0 10px;
         min-width: 200px;
         height: 50px;
@@ -72,15 +72,15 @@
 
 @media (max-width: 767px)  {
   .header-content {
-    .header-content__container {
+    &__container {
       
-      .header-content__title {
+      &__title {
         width: 536px;
         margin: 1px 0 33px 0;
       }
     }
-    .header-content__buttons {
-      .header-content__btn {
+    &__buttons {
+      &__btn {
         margin: 0 10px;
         min-width: 170px;
         height: 40px;
@@ -95,14 +95,14 @@
 
 @media (max-width: 575px) {
   .header-content {
-    .header-content__container {
-      .header-content__title {
+    &__container {
+      &__title {
         margin: 1px 0 33px 0;
         width: 400px;
       }
-      .header-content__buttons {
+      &__buttons {
         flex-direction: column;
-        .header-content__btn {
+        &__btn {
           margin: 0 10px;
           min-width: 170px;
           height: 40px;

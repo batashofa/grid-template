@@ -21,6 +21,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .skills__button{
+    .btn-accent{
+      padding: 18px $gap;
+    }
+  }
+}
+
 @media (max-width: 575px) {
   .skills__button{
     .btn-accent{
