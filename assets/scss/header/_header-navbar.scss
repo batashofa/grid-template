@@ -6,8 +6,7 @@
     transform: rotate(0deg);
     transition: 0.5s ease-in-out;
     cursor: pointer;
-    
-
+     
     @media (min-width: 768px) {
       display: none;
     }
@@ -89,7 +88,8 @@
     display: flex;
     letter-spacing: 0.1em;
     padding: 0;
-    margin-right: -20px;
+    margin-right: -20px;   
+    z-index: 3;
 
     @media (max-width: 767px) {
       display: none;
@@ -98,6 +98,7 @@
       right: 40px;
       text-align: end;
       background-color: rgba($color-gray-dark, 0.9);
+          
     }
 
     &.open {
@@ -108,10 +109,12 @@
       list-style-type: none;
       font-size: 1.125rem;
       margin: 0 20px;
+      
       @media (max-width: 767px) {
         padding: 20px;
         margin-right: 10px;
         margin: 0;
+       
       }
 
       .header-navbar__link {
